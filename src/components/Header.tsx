@@ -49,7 +49,7 @@ export const Header: React.FC<HeaderProps> = ({
             <h1 className="text-[15px] font-semibold tracking-[-0.01em] text-white leading-tight">
               FX Impact Cockpit
             </h1>
-            <p className="text-xs text-gray-400 leading-tight mt-0.5">Qué parte de tu resultado es tipo de cambio</p>
+            <p className="hidden lg:block text-xs text-gray-400 leading-tight mt-0.5">Qué parte de tu resultado es tipo de cambio</p>
           </div>
         </div>
 
@@ -81,7 +81,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center flex-nowrap gap-2">
           <div
             id="ecb-status-badge"
-            className={`inline-flex items-center gap-2 h-8 px-2.5 rounded-md border text-xs font-medium ${feedTone}`}
+            className={`inline-flex items-center gap-2 h-8 px-2.5 rounded-md border text-xs font-medium whitespace-nowrap ${feedTone}`}
           >
             <span className={`w-1.5 h-1.5 rounded-full ${dotTone}`} />
             <span>{feedLabel}</span>
@@ -117,7 +117,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="no-print inline-flex items-center gap-1.5 h-8 px-2.5 sm:px-3 rounded-md text-xs font-medium text-gray-200 border border-white/[0.12] hover:bg-white/[0.06] hover:text-white transition-colors"
           >
             <Printer className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Exportar informe</span>
+            <span className="hidden lg:inline">Exportar informe</span>
           </button>
         </div>
       </div>
